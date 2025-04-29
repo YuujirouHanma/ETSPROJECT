@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDeskKu - Customer Service</title>
+
+  <!-- Font & Icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    /* Tambahan CSS untuk Testimonial Box */
+    .testimonial-box {
+      background-color: #f9f9f9;
+      border: 2px solid #ccc;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .testimonial-item {
+      background-color: #fff;
+      padding: 20px;
+      border-left: 5px solid #4CAF50;
+      border-radius: 8px;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">HelpDeskKu</h1>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#contact">Hubungi Kami</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#track">Lacak Tiket</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Konten Halaman -->
+  <div class="container">
+
+    <!-- Section Beranda -->
+    <section id="home" class="section active">
+      <h2>Selamat Datang di HelpDeskKu</h2>
+      <p>Layanan customer service 24 jam untuk membantu kebutuhan Anda</p>
+    </section>
+
+    <!-- Section Testimonial (dipindah ke bawah home dan dengan kotak khusus) -->
+    <section id="testimonial" class="section testimonial-box">
+      <h2>Apa Kata Pelanggan Kami</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-item">
+          <p class="testimonial-text">"Layanan HelpDeskKu sangat membantu! Saya mendapatkan respon yang cepat dan masalah saya segera terselesaikan."</p>
+          <p class="testimonial-author">- Andi, Pengguna Setia</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-text">"Proses pengajuan tiket sangat mudah dan tim support selalu siap membantu. Luar biasa!"</p>
+          <p class="testimonial-author">- Siti, Pelanggan Terpercaya</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-text">"Saya sangat puas dengan layanan HelpDeskKu. Mereka selalu merespon dengan cepat dan sangat profesional!"</p>
+          <p class="testimonial-author">- Joko, Pengguna Setia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Formulir Kontak -->
+    <section id="contact" class="section">
+      <h2>Hubungi Kami</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" required>
+          <span class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <span class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topik:</label>
+          <select id="topic" required>
+            <option value="">Pilih Topik</option>
+            <option>Teknis</option>
+            <option>Akun</option>
+            <option>Lainnya</option>
+          </select>
+          <span class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan:</label>
+          <textarea id="message" rows="5" required></textarea>
+          <span class="error"></span>
+        </div>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <div id="messagePreview" class="preview-box"></div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section id="faq" class="section">
+      <h2>Pertanyaan Umum</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana cara reset password?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Anda bisa menggunakan fitur lupa password di halaman login.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Berapa lama respon tim support?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Tim kami akan merespon dalam 1-2 hari kerja.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana cara membuat tiket bantuan?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Anda bisa membuat tiket bantuan dengan mengisi formulir pada halaman Hubungi Kami.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah saya bisa mengubah email yang terdaftar?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, silakan hubungi tim support kami untuk membantu proses perubahan email.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah layanan ini tersedia selama akhir pekan?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Saat ini, layanan pelanggan kami hanya tersedia pada hari kerja.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Berapa lama proses penyelesaian tiket?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Rata-rata penyelesaian tiket membutuhkan waktu 1–3 hari kerja tergantung pada kompleksitas masalah.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana cara mengetahui status tiket saya?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Anda bisa melacak status tiket melalui menu Lacak Tiket di atas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Lacak Tiket -->
+    <section id="track" class="section">
+      <h2>Lacak Status Tiket</h2>
+      <div class="track-form">
+        <input type="text" id="ticketNumber" placeholder="Contoh: TKT12345">
+        <button onclick="checkTicket()">Cek Status</button>
+      </div>
+      <div id="ticketStatus" class="status-box"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
