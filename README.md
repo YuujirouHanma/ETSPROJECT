@@ -1,6 +1,9 @@
 # ETSPROJECT
 PROJECT ETS PEMROGRAMAN WEB
 
+1. Jeremia Kevin Alexander Jagardo Malau 5054231027
+2. Muhammad Naufal Arifin 5054231006
+
 HelpDeskKu: Sistem Layanan Bantuan Pelanggan
 
 HelpDeskKu adalah proyek web aplikasi sederhana yang dirancang untuk menyediakan layanan bantuan pelanggan 24 jam berbasis web. Sistem ini menampilkan antarmuka interaktif dan responsif untuk pengguna yang ingin:
@@ -36,9 +39,8 @@ HelpDeskKu adalah proyek web aplikasi sederhana yang dirancang untuk menyediakan
     Google Fonts (Poppins) – Untuk tampilan font yang modern
     
     
-    
     Apa yang saya buat:
-    Saya membuat sebuah sistem layanan pelanggan berbasis web bernama HelpDeskKu. Aplikasi ini memungkinkan          pengguna untuk menghubungi customer service, membaca testimonial dari pengguna lain, mengecek status tiket       bantuan, dan menemukan jawaban dari pertanyaan umum (FAQ).
+    Saya membuat sebuah sistem layanan pelanggan berbasis web bernama HelpDeskKu. Aplikasi ini memungkinkan          pengguna untuk menghubungi customer service, membaca testimonial dari pengguna lain, mengecek status tiket       bantuan,        dan menemukan jawaban dari pertanyaan umum (FAQ).
 
     Menggunakan apa:
     Saya menggunakan teknologi dasar front-end yaitu:
